@@ -36,4 +36,17 @@ description: |
 base: core20
 version: 1.0.1
 grade: devel
-confinement: devmode
+confinement: strict
+
+apps:
+  orf-hq:
+    command: bin/hq
+    plugs:
+      - home
+      - removable-media
+
+parts:
+  hq:
+    plugin: rust
+    source: https://github.com/orf/hq.git
+    source-tag: v1.0.1
