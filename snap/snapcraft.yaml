@@ -8,24 +8,21 @@ summary: jq, but for HTML
 description: |
   `hq` reads HTML and converts it into a JSON object based on a series of CSS selectors. The selectors are expressed in a similar way to JSON, but where the values are CSS selectors. For example:
 
-  ```
-  {posts: .athing | [ {title: .titleline > a, url: .titleline > a | @(href)} ] }
-  ```
+      {posts: .athing | [ {title: .titleline > a, url: .titleline > a | @(href)} ] }
 
   This will select all `.athing` elements, and it will create an array (`| [{...}]`) of objects for each element selected. Then for each element it will select the text of the `titleline > a` element, and the `href` attribute (`| @(href)`).
 
   The end result is the following structure:
 
-  ```
-  {
-    "posts": [
+
       {
-        "title": "...",
-        "url": "..."
+        "posts": [
+          {
+            "title": "...",
+            "url": "..."
+          }
+        ]
       }
-    ]
-  }
-  ```
 
   **Snap-specific notes**
 
