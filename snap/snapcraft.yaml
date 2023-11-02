@@ -36,11 +36,13 @@ grade: devel
 confinement: strict
 
 apps:
-  orf-hq:
+  orf-hq: &app-definition
     command: bin/hq
     plugs:
       - home
       - removable-media
+
+  hq: *app-definition
 
 parts:
   hq:
