@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Unofficial snap packaging for the hq utility by Tom Forbes
+Upstream-Contact: The Unofficial snap packaging for the hq utility by Tom Forbes issue tracker <https://github.com/brlin-tw/orf-hq-snap/issues>
+Source: https://github.com/brlin-tw/orf-hq-snap
+
+Files:
+ *README.md
+ */README.md
+Copyright: 2023 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+License: CC-BY-SA-4.0+
