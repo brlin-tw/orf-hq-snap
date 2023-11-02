@@ -88,3 +88,6 @@
 
 # Don't track continuous intregration virtual environments
 /continuous-integration/venv/
+
+# Don't track built snap package
+*.snap

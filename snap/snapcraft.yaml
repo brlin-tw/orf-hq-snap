@@ -1,0 +1,39 @@
+# Snapcraft recipe for the orf-hq snap
+#
+# Copyright 2023 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+# SPDX-License-Identifier: CC-BY-SA-4.0+
+name: orf-hq
+title: The `hq` utility by Tom Forbes
+summary: jq, but for HTML
+description: |
+  `hq` reads HTML and converts it into a JSON object based on a series of CSS selectors. The selectors are expressed in a similar way to JSON, but where the values are CSS selectors. For example:
+
+  ```
+  {posts: .athing | [ {title: .titleline > a, url: .titleline > a | @(href)} ] }
+  ```
+
+  This will select all `.athing` elements, and it will create an array (`| [{...}]`) of objects for each element selected. Then for each element it will select the text of the `titleline > a` element, and the `href` attribute (`| @(href)`).
+
+  The end result is the following structure:
+
+  ```
+  {
+    "posts": [
+      {
+        "title": "...",
+        "url": "..."
+      }
+    ]
+  }
+  ```
+
+  **Snap-specific notes**
+
+  This snap is NOT an official distribution of hq, please refer to the snap's own issue tracker for support:
+
+      https://github.com/brlin-tw/orf-hq-snap/issues
+
+base: core20
+version: 1.0.1
+grade: devel
+confinement: devmode
