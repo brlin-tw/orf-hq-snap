@@ -58,4 +58,4 @@ parts:
   hq:
     plugin: rust
     source: https://github.com/orf/hq.git
-    source-tag: v1.2.0
+    source-tag: html-query-v1.2.0
