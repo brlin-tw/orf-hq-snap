@@ -36,7 +36,7 @@ description: |
       }
 
 base: core20
-version: 1.0.1
+version: 1.2.0
 grade: stable
 confinement: strict
 
@@ -53,4 +53,4 @@ parts:
   hq:
     plugin: rust
     source: https://github.com/orf/hq.git
-    source-tag: v1.0.1
+    source-tag: v1.2.0
