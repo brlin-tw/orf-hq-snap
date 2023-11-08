@@ -11,6 +11,11 @@ description: |
   This snap is NOT an official distribution of hq, please refer to the
   snap's own issue tracker for support: https://github.com/brlin-tw/orf-hq-snap/issues
 
+  You can run the following command to expose the native `hq` command
+  to your shell:
+
+      snap alias orf-hq.hq hq
+
   **Upstream project description**
 
   `hq` reads HTML and converts it into a JSON object based on a series
