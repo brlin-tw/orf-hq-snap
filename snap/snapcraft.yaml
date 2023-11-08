@@ -3,9 +3,16 @@
 # Copyright 2023 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0+
 name: orf-hq
-title: The `hq` utility by Tom Forbes (UNOFFICIAL)
+title: The `hq` utility by Tom Forbes
 summary: jq, but for HTML
 description: |
+  **Snap-specific notes**
+
+  This snap is NOT an official distribution of hq, please refer to the
+  snap's own issue tracker for support: https://github.com/brlin-tw/orf-hq-snap/issues
+
+  **Upstream project description**
+
   `hq` reads HTML and converts it into a JSON object based on a series
   of CSS selectors. The selectors are expressed in a similar way to
   JSON, but where the values are CSS selectors. For example:
@@ -27,11 +34,6 @@ description: |
           }
         ]
       }
-
-  **Snap-specific notes**
-
-  This snap is NOT an official distribution of hq, please refer to the
-  snap's own issue tracker for support: https://github.com/brlin-tw/orf-hq-snap/issues
 
 base: core20
 version: 1.0.1
